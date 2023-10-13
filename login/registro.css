@@ -1,0 +1,144 @@
+:root{
+    --colorTextos: #fcf8f8;
+}
+
+body {
+    background: #2691d9;
+    background: -webkit-linear-gradient(to right, #6A82FB, #2691d9);
+    background: linear-gradient(to right, #6A82FB, #2691d9);
+    font-family: 'Poppins', sans-serif;
+    width: 99%;
+    height:650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 28px;
+    
+
+}
+
+form{
+    width: 20%;
+    padding: 10px 0;
+    border-radius: 10px;
+    
+}
+
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo{
+    position: relative;
+    margin: 45px;
+}
+
+input{
+    background: none;
+    color:#fcf8f8;
+    font-size: 15px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+}
+
+input:focus{
+    outline: none;
+    color: rgb(255, 255, 255);
+}
+
+input:focus~label, 
+input:valid~label, 
+textarea:focus~label, textarea:valid~label{
+    position: absolute;
+    top: -14px;
+    font-size: 12px;
+    color: #fcf8f8;
+}
+
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top:10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+
+input:focus{
+    width: 100%;
+}
+
+input[type="submit"]{
+    margin: 30px;
+    width: 80%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    color: #fcf8f8;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    font-size: 15px;
+    
+  }
+  input[type="submit"]:hover{
+    border-color: #2691d9;
+    transition: .5s;
+  }
+  .signup_link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+  }
+  .signup_link a{
+    color: #2691d9;
+    text-decoration: none;
+  }
+  .signup_link a:hover{
+    text-decoration: underline;
+  }
+  
+  p{
+    color: #fcf8f8;
+  }
+  
+
+
+
+@media screen and (max-width:1100px){
+    form{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:600px){
+    form{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:450px){
+    form{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:300px){
+    form{
+        width: 90%;
+    }
+}
